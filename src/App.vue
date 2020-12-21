@@ -22,7 +22,7 @@
 
 <style scoped>
     body{
-        background-image: url("./assets/background.jpg");
+        background-image: url('./assets/background.jpg');
         background-size:cover;
         background-attachment:fixed; 
         opacity: 0.5;

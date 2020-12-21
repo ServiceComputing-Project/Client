@@ -3,21 +3,21 @@
         <footer>
             <ul>
                 <li><Icon type="logo-github" :size="25" style="margin-right: 5px"/><span>Github</span></li>
-                <li><a href="https://github.com/SYSU-SimpleBlog/Proj-doc" target="_blank">Docs</a></li>
-                <li><a href="https://github.com/SYSU-SimpleBlog/Client" target="_blank">FrontEnd</a></li>
-                <li><a href="https://github.com/SYSU-SimpleBlog/Server" target="_blank">BackEnd</a></li>
+                <li><a href="https://github.com/ServiceComputing-Project/Docs" target="_blank">Docs</a></li>
+                <li><a href="https://github.com/ServiceComputing-Project/Client" target="_blank">FrontEnd</a></li>
+                <li><a href="https://github.com/ServiceComputing-Project/Server" target="_blank">BackEnd</a></li>
             </ul>
             <ul>
                 <li><Icon type="md-people" size="25" style="margin-right: 5px"/><span>FrontEnd Team</span></li>
-                <li><a href="https://github.com/DanielXuuuuu" target="_blank">Daniel Xu</a></li>
-                <li><a href="https://github.com/xutaiqi" target="_blank">xutaiqi</a></li>
+                <li><a href="https://github.com/zxy0616" target="_blank">Zhang Xuanyu</a></li>
+                <li><a href="https://github.com/xutaiqi" target="_blank">Zhang Xinyue</a></li>
             </ul>
             <ul>
                 <li><Icon type="ios-people" size="25" style="margin-right: 5px"/><span>BackEnd Team</span></li>
-                <li><a href="https://github.com/IYreality" target="_blank">Ailsa</a></li>
-                <li><a href="https://github.com/LeoBarwoo" target="_blank">LeoBarwoo</a></li>
-                <li><a href="https://github.com/rye0410" target="_blank">rye0410</a></li>
-                <li><a href="https://github.com/xxxufj" target="_blank">xxxufj</a></li>
+                <li><a href="https://github.com/IYreality" target="_blank">Zhou Yuan</a></li>
+                <li><a href="https://github.com/LeoBarwoo" target="_blank">Yang Ling</a></li>
+                <li><a href="https://github.com/beikenken" target="_blank">Zhang Youfang</a></li>
+                <li><a href="https://github.com/utaZ" target="_blank">Zou Wenrui</a></li>
             </ul>
             <ul>
                 <li><Icon type="md-chatboxes" size="25" style="margin-right: 5px"/><span>Contact Us</span></li>
@@ -37,7 +37,7 @@
 
 <style scoped>
     div{
-        background-color: #24292E;
+        background-color: #AFEEEE;
         width: 100%;
         position:absolute;
         bottom:0;
@@ -47,7 +47,7 @@
         display: flex;
         overflow: hidden;
         padding: 20px;
-        color: white;
+        color: rgb(0, 0, 0);
         justify-content: space-around;
     }
 
@@ -65,6 +65,6 @@
     }
 
     a{
-        color: white;
+        color: rgb(0, 0, 0);
     }
 </style>

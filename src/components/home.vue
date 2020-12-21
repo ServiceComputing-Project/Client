@@ -9,7 +9,7 @@
         </ul>
 
         <p style="margin-top: 50px;">Click the sign-in button to enjoy.</p>
-        <p>See more details in <a href="https://github.com/SYSU-SimpleBlog" target="_blank">Github</a></p>
+        <p>See more details in <a href="https://github.com/ServiceComputing-Project" target="_blank">Github</a></p>
     </div>
 </template>
 

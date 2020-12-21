@@ -1,7 +1,7 @@
 <template>
-    <div style="width: 500px; margin: 150px auto 0px;">
+    <div class="cardback" style="width: 500px; margin: 150px auto 0px;">
         <Card>
-            <p slot="title" style="text-align: center; font-size: 20px;">
+            <p slot="title" style="text-align: center; font-size: 20px; font-family:Arial,Helvetica,sans-serif">
                 <b>登 录</b>
             </p>
             <Form v-model="signInForm" label-position="top" :rules="rule">
@@ -52,7 +52,7 @@
                                     h('span', {}, '欢迎,' + this.signInForm.username +'!  这是一个简单的博客网站。详情请见'),
                                     h('a', {
                                         attrs: {
-                                            href: 'https://github.com/SYSU-SimpleBlog',
+                                            href: 'https://github.com/ServiceComputing-Project',
                                             target: '_blank'
                                         }
                                     }, 'Github')
@@ -77,5 +77,10 @@
 </script>
 
 <style scoped>
+    .cardback{
+        background-image: url('./assets/signin.png') no-repeat;
+        opacity: 0.6;
+        box-shadow: 0px 5px 20px #999;
+    }
 
 </style>
