@@ -1,14 +1,14 @@
 <template>
     <div>
         <header class="header">
-            <a @click="toHomePage">Simple Blog</a>
+            <a @click="toHomePage">My Blog</a>
             <router-link v-if="this.$route.name ==='home'" style="float:right; margin-right: 50px; font-size: 15px;" to="/signin">
                 <Button  ghost >登录</Button>
             </router-link>
             <router-link v-else-if="this.$route.name ==='articleList'" style="float:right; margin-right: 50px; font-size: 15px;" to="/">
                 <Button  ghost @click="signOut">退出</Button>
             </router-link>
-            <Input id="search" prefix="md-book" search placeholder="搜索..." @on-focus="expend" @on-blur="narrow"
+            <Input id="search" prefix="md-book" search placeholder="search for..." @on-focus="expend" @on-blur="narrow"
                    style="float:right; width: 250px;  margin-right: 50px"/>
             <div style="clear: both"/>
         </header>
@@ -44,14 +44,16 @@
 <style scoped>
     .header {
         padding: 20px 0 20px 150px;
-        background-color: #24292E;
+        background-color: #AFEEEE;
     }
     .header a {
         text-decoration: none;
-        font-size: 20px;
+        font-size: 25px;
         letter-spacing: 3px;
         text-transform: uppercase;
-        color: white;
+        font-family: sans-serif;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
     }
 
     #search{

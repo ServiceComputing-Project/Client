@@ -21,8 +21,15 @@
 </script>
 
 <style scoped>
+    body{
+        background-image: url("./assets/background.jpg");
+        background-size:cover;
+        background-attachment:fixed; 
+        opacity: 0.5;
+    }
     #main{
         min-height:100%;
         padding-bottom: 200px;
     }
+
 </style>
