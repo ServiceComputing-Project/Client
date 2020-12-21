@@ -10,12 +10,12 @@
             <ul>
                 <li><Icon type="md-people" size="25" style="margin-right: 5px"/><span>FrontEnd Team</span></li>
                 <li><a href="https://github.com/zxy0616" target="_blank">Zhang Xuanyu</a></li>
-                <li><a href="https://github.com/xutaiqi" target="_blank">Zhang Xinyue</a></li>
+                <li><a href="https://github.com/zhangxy0" target="_blank">Zhang Xinyue</a></li>
             </ul>
             <ul>
                 <li><Icon type="ios-people" size="25" style="margin-right: 5px"/><span>BackEnd Team</span></li>
-                <li><a href="https://github.com/IYreality" target="_blank">Zhou Yuan</a></li>
-                <li><a href="https://github.com/LeoBarwoo" target="_blank">Yang Ling</a></li>
+                <li><a href="https://github.com/Annecle" target="_blank">Zhou Yuan</a></li>
+                <li><a href="https://github.com/EmilyYoung9" target="_blank">Yang Ling</a></li>
                 <li><a href="https://github.com/beikenken" target="_blank">Zhang Youfang</a></li>
                 <li><a href="https://github.com/utaZ" target="_blank">Zou Wenrui</a></li>
             </ul>
