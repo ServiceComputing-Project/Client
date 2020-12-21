@@ -1,7 +1,7 @@
 <template>
     <div>
         <header class="header">
-            <a @click="toHomePage">My Blog</a>
+            <a @click="toHomePage" >My Blog</a>
             <router-link v-if="this.$route.name ==='home'" style="float:right; margin-right: 50px; font-size: 15px;" to="/signin">
                 <Button  ghost >登录</Button>
             </router-link>
@@ -43,17 +43,18 @@
 
 <style scoped>
     .header {
-        padding: 20px 0 20px 150px;
+        padding: 10px 0 20px 150px;
         background-color: #AFEEEE;
     }
     .header a {
-        text-decoration: none;
-        font-size: 25px;
+    	margin-left:0px;
+        font-size: 30px;
         letter-spacing: 3px;
         text-transform: uppercase;
         font-family: sans-serif;
         color: rgb(0, 0, 0);
         font-weight: bold;
+        
     }
 
     #search{

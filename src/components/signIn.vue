@@ -1,5 +1,5 @@
 <template>
-    <div class="cardback" style="width: 500px; margin: 150px auto 0px;">
+    <div  style="width: 500px; margin: auto auto 0px;">
         <Card>
             <p slot="title" style="text-align: center; font-size: 20px; font-family:Arial,Helvetica,sans-serif">
                 <b>登 录</b>
@@ -77,10 +77,5 @@
 </script>
 
 <style scoped>
-    .cardback{
-        background-image: url('./assets/signin.png') no-repeat;
-        opacity: 0.6;
-        box-shadow: 0px 5px 20px #999;
-    }
 
 </style>
