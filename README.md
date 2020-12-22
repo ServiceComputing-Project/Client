@@ -1,8 +1,18 @@
 # Client
 客户端项目
 
+## 参与人员
+18342129 张轩语，    18342128 张心悦
 
-18342129 张轩语（zxy0616）[前端个人总结](https://blog.csdn.net/qq_43233275/article/details/111556495)
+## 运行方式
 
+```
+# 克隆仓库
+git clone https://github.com/ServiceComputing-Project/Client
 
-18342128 张心悦（zhangxy0）
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+```
