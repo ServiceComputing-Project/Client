@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SYSU-SimpleBlog/Client.git"
+    "url": "git+https://github.com/ServiceComputing-Project/Client.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SYSU-SimpleBlog/Client/issues"
+    "url": "https://github.com/ServiceComputing-Project/Client/issues"
   },
-  "homepage": "https://github.com/SYSU-SimpleBlog/Client#readme",
+  "homepage": "https://github.com/ServiceComputing-Project/Client#readme",
   "devDependencies": {
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
@@ -48,7 +48,7 @@
     "marked": "^0.7.0",
     "save": "^2.4.0",
     "view-design": "^4.0.2",
-    "vue": "^2.6.10",
+    "vue": "^2.6.12",
     "vue-router": "^3.1.3"
   }
 }
