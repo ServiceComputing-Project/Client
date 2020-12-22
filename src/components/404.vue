@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h1>OOPS!</h1>
-        <p>Please check that the URL you entered is correct, or click the button below to return to the homepage.</p>
-        <router-link to="/">返回主页</router-link>
+        <h1>ERROR!</h1>
+        <p>Please check the URL,</br>or click the button 
+        <router-link to="/"><Button >返回主页</Button></router-link></p>
     </div>
 </template>
 
@@ -17,10 +17,14 @@ export default {
         text-align: center;
     }
     h1{
-        margin-top: 100px;
+        padding-top: 100px;
         font-size: 40px;
     }
     p{
         margin: 20px 0;
+        font-size: 25px;
+    }
+    Button{
+    	font-size: 25px;
     }
 </style>

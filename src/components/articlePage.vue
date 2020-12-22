@@ -1,17 +1,10 @@
 <template>
     <div id="article" v-if="articleData.content != ''">
-        <ButtonGroup vertical style="position: fixed; margin-top:0px; margin-left: -70px;">
-            <Button icon="logo-facebook"></Button>
-            <Button icon="logo-twitter"></Button>
-            <Button icon="logo-googleplus"></Button>
-            <Button icon="logo-tumblr"></Button>
-        </ButtonGroup>
         <BackTop :height="100"></BackTop>
         <h1>{{ articleData.name }}</h1>
         <div style="text-align: center">发表时间：{{ articleData.date }}</div>
         <div id="content">
             <p v-html="compileMarkdown"></p>
-<!--            <vue-markdown :source="articleData.content"></vue-markdown>-->
         </div>
         <div id="tags" style="text-align: center">
             <span v-for="(item) in articleData.tags" style="margin-right: 5px;"><Icon type="md-pricetag"/>{{ item.name }}</span>
@@ -32,7 +25,7 @@
                     <span style="font-size: 17px;"><b>{{ item.author }}</b></span><span style="margin-left: 10px; color: darkgray">{{ item.date }}</span>
                     <span style="margin-left: 10px; color: darkgray">#{{ index + 1 + (currentCommentPage - 1)*5 }}楼</span>
                     <span style="float: right"><a @click="reply">回复</a></span>
-                    <p style="padding: 10px">{{ item.content }}</p>
+                    <p style="padding: 10px;font-size:15px;">{{ item.content }}</p>
                     <Divider dashed/>
                 </div>
                 <Page :total="this.totalCommentsNum" :page-size="5" size="small" show-total style="float: right; overflow: hidden" @on-change="handlePageTurn"/>
@@ -162,18 +155,18 @@
 
 <style scoped>
     #article {
-        margin-top: 50px;
         padding: 0 250px;
-        position: relative;
+        overflow: hidden;
     }
-
     h1 {
         text-align: center;
-        margin: 20px 0 5px 0;
         color: black;
+        padding-top:15px;
     }
-
     #content {
         margin: 30px 0;
+        color:black;
+        overflow:scroll;
+        font-size:20px;
     }
 </style>

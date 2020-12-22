@@ -1,5 +1,5 @@
 <template>
-    <div  style="width: 500px; margin: auto auto 0px;">
+    <div  style="width: 500px; padding-top: 100px;margin:0 auto">
         <Card>
             <p slot="title" style="text-align: center; font-size: 20px; font-family:Arial,Helvetica,sans-serif">
                 <b>登 录</b>

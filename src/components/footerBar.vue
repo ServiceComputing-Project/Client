@@ -2,6 +2,7 @@
     <div>
         <footer>
         <ul>
+          <p @click="toHomePage" >My Blog</p>
           <li>
             <ul>
                 <li><Icon type="logo-github" :size="25" style="margin-right: 5px"/><span style="font-size:20px;">Github</span></li>
@@ -26,7 +27,12 @@
                 <li><a href="https://github.com/utaZ" target="_blank">utaz</a></li>
             </ul>
             </li>
-            
+            <router-link v-if="this.$route.name ==='home'" style="float:right; margin-right: 60px; font-size: 30px;color: black;" to="/signin">
+                <Button >登录</Button>
+            </router-link>
+            <router-link v-else-if="this.$route.name ==='articleList'" style="float:right; margin-right: 60px; font-size: 30px;color: black;" to="/">
+                <Button @click="signOut">退出</Button>
+            </router-link>
           </ul>
 
         </footer>
@@ -35,16 +41,35 @@
 
 <script>
     export default {
-        name: "footerBar"
+        name: "footerBar",
+        methods:{
+            toHomePage(){
+                if(window.localStorage.isLogin === '1')
+                    this.$router.push('/articleList')
+                else
+                    this.$router.push('/')
+            },
+            expend(){
+                let s = document.getElementById("search")
+                s.style.width='400px'
+                this.$Message.warning('未完成的功能，敬请期待!')
+            },
+            narrow(){
+                let s = document.getElementById("search")
+                s.style.width='250px'
+            },
+            signOut(){
+                this.$store.commit('$_removeStorage')
+            }
+        }
     }
 </script>
 
 <style scoped>
     div{
         background-color: #AFEEEE;
-        //width: 100%;
         width: 12%;
-        height: 93%;
+        height: 100%;
         position:absolute;
         bottom:0;
         left:0
@@ -66,8 +91,6 @@
     }
 
     footer ul li{
-        //margin-left: 10px;
-        //margin-top: 5px;
         display: block;
         padding: 8px 16px;
         text-decoration: none;
@@ -80,5 +103,22 @@
     a{
         color: rgb(0, 0, 0);
         font-size:15px;
+    }
+    p {
+    	margin-left:0px;
+        font-size: 30px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        
+    }
+    Button{
+    	font-size: 25px;
+    	color: black;
+    	background-color: #AFEEEE;
+    	border:1px solid black;
+    	
     }
 </style>

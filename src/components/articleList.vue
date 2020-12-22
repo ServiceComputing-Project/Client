@@ -12,7 +12,7 @@
                         {{item.name}}
                     </router-link>
                 </div>
-                <span id="delete" style="float: right; margin: 5px;" ><a @click="openDeleteModal(index)" style="color: black"><Icon type="md-trash" style="color: black;"/>删除</a></span>
+                <span id="delete" style="float: right; " ><a @click="openDeleteModal(index)" style="color: black"><Icon type="md-trash" style="color: black;"/>删除</a></span>
                 <Divider/>
             </li>
         </ul>
@@ -101,17 +101,17 @@
 <style scoped>
     h1 {
         text-align: center;
-        margin-bottom: 30px;
+        padding-top:15px;
+        padding-bottom: 15px;
     }
 
     #articleList {
-        margin-top: 50px;
         padding: 0 350px;
     }
 
     li{
-        list-style: none;
-        height:80px;
+        list-style: disc;
+        height:60px;
     }
 
     li span{
@@ -122,14 +122,16 @@
         padding-left: 10px;
         padding-top: 5px;
         font-size: 17px;
-        height: 50px;
+        height: 60px;
     }
 
     #title a{
         color: #24292E;
+        
     }
     #title a:hover{
         color: chocolate;
+        
     }
 
     li:hover{
