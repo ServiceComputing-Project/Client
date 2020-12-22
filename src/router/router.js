@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 import home from '../components/home.vue';
 import errorPage from '../components/404.vue';
-import signIn from '../components/signin.vue'
+import signIn from '../components/signIn.vue'
 import articlePage from '../components/articlePage.vue'
 import articleList from '../components/articleList.vue'
 
